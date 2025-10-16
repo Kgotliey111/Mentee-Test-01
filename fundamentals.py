@@ -9,7 +9,11 @@ def add_numbers(a, b):
     5
     """
     # TODO: Write your code below
-    pass
+    a =  2
+    b = 3
+    sum = a + b
+    print(sum)
+
 
 
 def is_even(n):
@@ -24,7 +28,11 @@ def is_even(n):
     False
     """
     # TODO: Write your code below
-    pass
+    if n%2 == 0:
+     return is_even
+    else :
+ 
+     return False
 
 
 def count_vowels(word):
@@ -39,8 +47,10 @@ def count_vowels(word):
     2
     """
     # TODO: Write your code below
-    pass
-
+    
+    for i in word:
+        count = 0
+print(count_vowels("Hello"))
 
 def find_max(numbers):
     """
@@ -52,8 +62,10 @@ def find_max(numbers):
     10
     """
     # TODO: Write your code below
-    pass
+    for i in range(numbers):
+        
 
+print(find_max(10))
 
 def reverse_string(s):
     """
@@ -65,7 +77,8 @@ def reverse_string(s):
     'tac'
     """
     # TODO: Write your code below
-    pass
+    s = s[::-1]
+print(reverse_string("cat"))
 
 
 def average(numbers):
@@ -81,8 +94,14 @@ def average(numbers):
     0
     """
     # TODO: Write your code below
-    pass
+    average = sum/total_number
+    numbers = [ 2,4,6]
+    if numbers[2,4,6]:
+        return average
+    else:
 
+        return 0
+print(average(2,4,6))
 
 def word_in_sentence(word, sentence):
     """
@@ -96,7 +115,15 @@ def word_in_sentence(word, sentence):
     False
     """
     # TODO: Write your code below
-    pass
+    
+    for word in word_in_sentence:
+        if word  :
+            return True
+        else:
+            return False
+print("cat","The cat is sleeping")        
+
+
 
 
 def factorial(n):
@@ -113,8 +140,11 @@ def factorial(n):
     1
     """
     # TODO: Write your code below
-    pass
-
+    def factorial(n):
+        count = 1
+        for i in range(1,n+1):
+            count *= i
+    print(factorial(5))        
 
 def remove_duplicates(numbers):
     """
@@ -127,7 +157,12 @@ def remove_duplicates(numbers):
     [1, 2, 3]
     """
     # TODO: Write your code below
-    pass
+    for i in numbers:
+        new = ""
+        len(number)= len(set(number))
+
+
+
 
 
 def fizzbuzz(n):
@@ -144,4 +179,14 @@ def fizzbuzz(n):
     [1, 2, 'Fizz', 4, 'Buzz']
     """
     # TODO: Write your code below
-    pass
+    if n%3 == 0:
+        return "Fizz" 
+    elif n%5 == 0:
+        return "Buzz"
+    
+    else :n%3 == 0 and n%5 ==0
+    return "FizzBuzz"
+
+print(fizzbuzz(24))
+
+
